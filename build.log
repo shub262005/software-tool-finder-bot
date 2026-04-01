@@ -1,0 +1,23 @@
+
+> application@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.2 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 9.1s
+  Running TypeScript ...
+Failed to type check.
+
+./src/app/api/chat/route.ts:71:38
+Type error: Property 'pb_util' does not exist on type 'typeof import("D:/Project/AntiGravity/SoftwareToolFinderBot/node_modules/@google-cloud/dialogflow/build/src/index")'.
+
+  69 |         if (msg.payload && msg.payload.fields) {
+  70 |           // Decode Google Protobuf Struct into standard Javascript JSON Object
+> 71 |           customPayload = dialogflow.pb_util.struct.decode(msg.payload);
+     |                                      ^
+  72 |           // If we found a payload, we stop (assuming one main rich payload per reply)
+  73 |           break;
+  74 |         }
+Next.js build worker exited with code: 1 and signal: null
