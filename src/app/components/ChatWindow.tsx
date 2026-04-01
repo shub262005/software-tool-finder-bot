@@ -145,7 +145,15 @@ export default function ChatWindow() {
                         />
                       ),
                       p: ({ node, ...props }: any) => <p {...props} className="mb-2 last:mb-0" />,
-                      strong: ({ node, ...props }: any) => <strong {...props} className="font-semibold text-slate-100" />
+                      strong: ({ node, ...props }: any) => <strong {...props} className="font-semibold text-slate-100" />,
+                      img: ({ node, ...props }: any) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img 
+                          {...props} 
+                          className="max-w-full h-auto rounded-lg my-3 border border-slate-700/50 shadow-md object-contain" 
+                          alt={props.alt || "Bot provided image"} 
+                        />
+                      )
                     }}
                   >
                     {msg.text}
