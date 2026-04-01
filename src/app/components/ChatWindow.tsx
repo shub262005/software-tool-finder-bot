@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Bot, Send, User } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 
 type Message = {
   id: string;
@@ -127,13 +128,28 @@ export default function ChatWindow() {
               {/* Text context (if any) */}
               {msg.text && (
                 <div
-                  className={`p-4 rounded-2xl text-sm sm:text-base leading-relaxed ${
+                  className={`p-4 rounded-2xl text-sm sm:text-base leading-relaxed break-words ${
                     msg.role === "user"
                       ? "bg-indigo-600 text-white rounded-tr-sm shadow-md"
                       : "bg-slate-800 text-slate-200 rounded-tl-sm shadow-sm"
                   }`}
                 >
-                  {msg.text}
+                  <ReactMarkdown
+                    components={{
+                      a: ({ node, ...props }: any) => (
+                        <a 
+                          {...props} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="font-medium text-indigo-300 hover:text-indigo-200 underline decoration-indigo-400/30 underline-offset-2 transition-colors" 
+                        />
+                      ),
+                      p: ({ node, ...props }: any) => <p {...props} className="mb-2 last:mb-0" />,
+                      strong: ({ node, ...props }: any) => <strong {...props} className="font-semibold text-slate-100" />
+                    }}
+                  >
+                    {msg.text}
+                  </ReactMarkdown>
                 </div>
               )}
 
