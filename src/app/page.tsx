@@ -1,4 +1,4 @@
-import { Search, SlidersHorizontal, ExternalLink, Bot } from "lucide-react";
+import { Search, SlidersHorizontal, ExternalLink, Bot, Database, MessageSquare, Target } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,15 +22,15 @@ export default function Home() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
           </span>
-          Next-Gen AI Assistant
+          Powered by Google Dialogflow ES
         </div>
         
         <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight mb-8 max-w-4xl text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400">
-          Find the Perfect Software Tool in Seconds.
+          A Conversational Interface for Software Discovery.
         </h1>
         
         <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed">
-          Say goodbye to endless Googling. Software Tool Finder is your AI-powered companion that helps developers, designers, and creators discover, filter, and choose the best tools for their next project.
+          Skip generic, SEO-optimized articles. Chat directly with a Natural Language Processing (NLP) assistant that interprets your platform constraints, budget, and exact project needs to fetch verified tools from our database.
         </p>
 
         <Link 
@@ -39,51 +39,63 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
           <span className="relative flex items-center gap-2">
-            Try the Bot 
-            <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            Open Chat Interface 
+            <MessageSquare className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </span>
         </Link>
       </main>
 
-      {/* Features Section */}
-      <section className="relative py-24 px-6 max-w-7xl mx-auto z-10 border-t border-slate-800/50 mt-10">
+      {/* Objectives Section */}
+      <section className="relative py-20 px-6 max-w-7xl mx-auto z-10 border-t border-slate-800/50">
         <div className="text-center mb-16 px-4">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-100 mb-4">
-            Smarter Search.<br/>Better Tools.
+            Bot Objectives
           </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            Our AI understands your specific needs to cut through the noise <br className="hidden sm:block" /> and deliver exactly what you're looking for.
+          <p className="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+            The core objective of the Software Tool Finder is to streamline the developer and designer workflow. 
+            Rather than browsing endless lists, the bot guarantees unbiased results based entirely on logical database matches. 
+            It aims to reduce tool-discovery time from minutes to milliseconds seamlessly without intrusive form filling.
           </p>
+        </div>
+      </section>
+
+      {/* Functionality Section */}
+      <section className="relative py-12 px-6 max-w-7xl mx-auto z-10 mb-20 bg-slate-900/40 rounded-3xl border border-slate-800/60 p-8 sm:p-12">
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-100 mb-2">
+            Core Functionality
+          </h2>
+          <p className="text-slate-400">How the Dialogflow Agent processes your requests under the hood.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="group bg-slate-900/40 backdrop-blur-sm border border-slate-800/60 rounded-3xl p-8 hover:bg-slate-800/60 hover:border-slate-700 transition-all duration-300">
-            <div className="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-1 group-hover:bg-indigo-500/20 transition-all">
-              <Search className="w-7 h-7 text-indigo-400" />
+          <div className="group">
+            <div className="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-5 border border-indigo-500/20">
+              <MessageSquare className="w-6 h-6 text-indigo-400" />
             </div>
-            <h3 className="text-xl font-semibold text-slate-100 mb-3">Instant Searches</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Describe what you need in natural language. We analyze thousands of tools instantly to bring you highly relevant choices tailored to you.
+            <h3 className="text-lg font-semibold text-slate-100 mb-2">1. NLP Intent Parsing</h3>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              When you type a message, Dialogflow ES processes the natural language through custom intents to recognize conversational context (e.g., distinguishing "Find Tool" vs "Tool Alternatives").
             </p>
           </div>
 
-          <div className="group bg-slate-900/40 backdrop-blur-sm border border-slate-800/60 rounded-3xl p-8 hover:bg-slate-800/60 hover:border-slate-700 transition-all duration-300">
-            <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-1 group-hover:bg-blue-500/20 transition-all">
-              <SlidersHorizontal className="w-7 h-7 text-blue-400" />
+          <div className="group">
+            <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5 border border-blue-500/20">
+              <Target className="w-6 h-6 text-blue-400" />
             </div>
-            <h3 className="text-xl font-semibold text-slate-100 mb-3">Smart Filtering</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Narrow down results instantly by specifying budget constraints, platform availability, team sizes, and specific integrations.
+            <h3 className="text-lg font-semibold text-slate-100 mb-2">2. Entity Extraction</h3>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              The agent uses machine learning to automatically extract parameters from your sentence, classifying them into defined entities like <code>@budget</code>, <code>@category</code>, and <code>@platform</code>.
             </p>
           </div>
 
-          <div className="group bg-slate-900/40 backdrop-blur-sm border border-slate-800/60 rounded-3xl p-8 hover:bg-slate-800/60 hover:border-slate-700 transition-all duration-300">
-            <div className="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-1 group-hover:bg-emerald-500/20 transition-all">
-              <ExternalLink className="w-7 h-7 text-emerald-400" />
+          <div className="group">
+            <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-5 border border-emerald-500/20">
+              <Database className="w-6 h-6 text-emerald-400" />
             </div>
-            <h3 className="text-xl font-semibold text-slate-100 mb-3">Direct Links</h3>
-            <p className="text-slate-400 leading-relaxed">
-              Skip the SEO spam and long review articles. Get one-click direct access to official websites, pricing pages, and documentation.
+            <h3 className="text-lg font-semibold text-slate-100 mb-2">3. Webhook Fulfillment</h3>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Once extracted, the parameters are sent to a secure Google Apps Script webhook which maps the data to our spreadsheet database, running fuzzy matching, retrieving images, and streaming a rich JSON payload back to the UI.
             </p>
           </div>
         </div>
@@ -96,7 +108,7 @@ export default function Home() {
             <Bot className="w-5 h-5 text-indigo-500" />
             <span className="font-semibold text-slate-300 tracking-tight">Software Tool Finder</span>
           </div>
-          <p className="text-sm">© 2026. Made with intelligence.</p>
+          <p className="text-sm">Technical Implementation Demonstration</p>
         </div>
       </footer>
     </div>
