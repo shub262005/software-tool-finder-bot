@@ -39,11 +39,10 @@ export default function ChatWindow() {
     scrollToBottom();
   }, [messages]);
 
-  const handleSend = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() || isLoading) return;
+  const sendText = async (textToSend: string) => {
+    if (!textToSend.trim() || isLoading) return;
 
-    const userText = input.trim();
+    const userText = textToSend.trim();
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
@@ -51,7 +50,6 @@ export default function ChatWindow() {
     };
 
     setMessages((prev) => [...prev, userMessage]);
-    setInput("");
     setIsLoading(true);
 
     try {
@@ -86,6 +84,14 @@ export default function ChatWindow() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleSend = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim() || isLoading) return;
+    const textToSend = input;
+    setInput("");
+    await sendText(textToSend);
   };
 
   return (
@@ -212,6 +218,22 @@ export default function ChatWindow() {
                     )}
                   </div>
                 </div>
+              )}
+
+              {/* Quick Replies Action Chips */}
+              {msg.payload && msg.payload.quickReplies && msg.payload.quickReplies.length > 0 && (
+                 <div className="mt-3 flex flex-wrap gap-2">
+                   {msg.payload.quickReplies.map((qr: string, idx: number) => (
+                      <button
+                        key={idx}
+                        onClick={() => sendText(qr)}
+                        disabled={isLoading}
+                        className="px-4 py-1.5 rounded-full bg-slate-800 hover:bg-indigo-600 disabled:opacity-50 text-indigo-300 hover:text-white border border-slate-700 hover:border-indigo-500 transition-all text-xs sm:text-sm font-medium shadow-sm hover:shadow-md cursor-pointer"
+                      >
+                         {qr}
+                      </button>
+                   ))}
+                 </div>
               )}
             </div>
           </div>
