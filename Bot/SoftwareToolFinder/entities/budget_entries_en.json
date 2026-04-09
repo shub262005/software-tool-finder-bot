@@ -1,0 +1,28 @@
+[
+  {
+    "value": "free",
+    "synonyms": [
+      "free",
+      "open source",
+      "no cost",
+      "freeware"
+    ]
+  },
+  {
+    "value": "paid",
+    "synonyms": [
+      "paid",
+      "premium",
+      "commercial",
+      "subscription"
+    ]
+  },
+  {
+    "value": "any",
+    "synonyms": [
+      "any",
+      "doesn\u0027t matter",
+      "no preference"
+    ]
+  }
+]

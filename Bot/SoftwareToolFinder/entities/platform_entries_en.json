@@ -1,0 +1,44 @@
+[
+  {
+    "value": "windows",
+    "synonyms": [
+      "windows",
+      "PC",
+      "Win10",
+      "Win11"
+    ]
+  },
+  {
+    "value": "mac",
+    "synonyms": [
+      "mac",
+      "macOS",
+      "Apple"
+    ]
+  },
+  {
+    "value": "linux",
+    "synonyms": [
+      "linux",
+      "ubuntu",
+      "debian"
+    ]
+  },
+  {
+    "value": "web",
+    "synonyms": [
+      "web",
+      "browser",
+      "online",
+      "cloud"
+    ]
+  },
+  {
+    "value": "cross-platform",
+    "synonyms": [
+      "cross-platform",
+      "any platform",
+      "doesn\u0027t matter"
+    ]
+  }
+]

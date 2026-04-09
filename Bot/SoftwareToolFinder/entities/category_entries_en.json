@@ -1,0 +1,140 @@
+[
+  {
+    "value": "web-development",
+    "synonyms": [
+      "web development",
+      "frontend",
+      "backend",
+      "web design"
+    ]
+  },
+  {
+    "value": "coding",
+    "synonyms": [
+      "coding",
+      "programming",
+      "software development",
+      "IDE",
+      "code editor"
+    ]
+  },
+  {
+    "value": "hardware",
+    "synonyms": [
+      "hardware",
+      "embedded systems",
+      "microcontroller",
+      "ESP32",
+      "Arduino"
+    ]
+  },
+  {
+    "value": "performance-tuning",
+    "synonyms": [
+      "performance tuning",
+      "overclocking",
+      "power management",
+      "undervolting"
+    ]
+  },
+  {
+    "value": "data-science",
+    "synonyms": [
+      "data science",
+      "machine learning",
+      "data analysis",
+      "python notebooks"
+    ]
+  },
+  {
+    "value": "blockchain",
+    "synonyms": [
+      "blockchain",
+      "web3",
+      "crypto",
+      "smart contracts",
+      "Ethereum",
+      "Solidity"
+    ]
+  },
+  {
+    "value": "database",
+    "synonyms": [
+      "database",
+      "SQL",
+      "NoSQL",
+      "database management",
+      "MySQL"
+    ]
+  },
+  {
+    "value": "game-development",
+    "synonyms": [
+      "game development",
+      "game engine",
+      "making games"
+    ]
+  },
+  {
+    "value": "design",
+    "synonyms": [
+      "design",
+      "UI",
+      "UX",
+      "graphic design",
+      "vector graphics",
+      "wireframing"
+    ]
+  },
+  {
+    "value": "video-editing",
+    "synonyms": [
+      "video editing",
+      "video production",
+      "film editing"
+    ]
+  },
+  {
+    "value": "audio-editing",
+    "synonyms": [
+      "audio editing",
+      "music production",
+      "sound design"
+    ]
+  },
+  {
+    "value": "photo-editing",
+    "synonyms": [
+      "photo editing",
+      "image manipulation",
+      "retouching"
+    ]
+  },
+  {
+    "value": "api-testing",
+    "synonyms": [
+      "api testing",
+      "REST API",
+      "backend testing",
+      "endpoints"
+    ]
+  },
+  {
+    "value": "project-management",
+    "synonyms": [
+      "project management",
+      "task tracking",
+      "kanban",
+      "agile"
+    ]
+  },
+  {
+    "value": "writing",
+    "synonyms": [
+      "writing",
+      "documentation",
+      "note taking",
+      "markdown"
+    ]
+  }
+]

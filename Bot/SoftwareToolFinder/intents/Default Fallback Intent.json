@@ -1,0 +1,35 @@
+{
+  "id": "dd44c8c2-1c9d-4e7a-ba58-b2f53a1c3d6b",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hmm, I didn\u0027t quite catch that! Try asking something like: \u0027I need a free design tool for Mac\u0027 or \u0027Tell me about VS Code\u0027.\n\nI\u0027m here to help you find the right software tool! 😊"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

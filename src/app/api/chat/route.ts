@@ -76,18 +76,32 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "No response from Dialogflow" }, { status: 500 });
     }
 
-    const fulfillmentText = result.fulfillmentText || "";
-    let customPayload = null;
+    let fulfillmentText = result.fulfillmentText || "";
+    let customPayload: any = null;
 
-    // Search for custom payloads in fulfillment messages
+    // Search for text and custom payloads in fulfillment messages
     if (result.fulfillmentMessages && result.fulfillmentMessages.length > 0) {
+      let extractedTexts: string[] = [];
       for (const msg of result.fulfillmentMessages) {
-        if (msg.payload && msg.payload.fields) {
-          // Decode Google Protobuf Struct into standard Javascript JSON Object
-          customPayload = decodeStruct(msg.payload);
-          // If we found a payload, we stop (assuming one main rich payload per reply)
-          break;
+        // Extract text from text messages
+        if (msg.text && msg.text.text && msg.text.text.length > 0) {
+          extractedTexts.push(msg.text.text.join('\n'));
         }
+        
+        // Extract custom payloads
+        if (msg.payload && msg.payload.fields) {
+          const decoded = decodeStruct(msg.payload);
+          if (!customPayload) {
+            customPayload = decoded;
+          } else {
+            customPayload = { ...customPayload, ...decoded };
+          }
+        }
+      }
+
+      // If fulfillmentText is empty but we matched text in fulfillmentMessages, use it
+      if (!fulfillmentText && extractedTexts.length > 0) {
+        fulfillmentText = extractedTexts.join('\n\n');
       }
     }
 

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "990dfbac-e162-4dd8-b09a-00bf48a6c006",
+    "data": [
+      {
+        "text": "Tell me about ",
+        "userDefined": false
+      },
+      {
+        "text": "VS Code",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "247501e8-371e-44ce-b176-4e976e129985",
+    "data": [
+      {
+        "text": "What is ",
+        "userDefined": false
+      },
+      {
+        "text": "Figma",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "010ab037-ae8d-422a-8505-1c6ea11f4b7b",
+    "data": [
+      {
+        "text": "Explain ",
+        "userDefined": false
+      },
+      {
+        "text": "Arduino IDE",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f4b46b3f-ce00-4937-a784-64c863d88597",
+    "data": [
+      {
+        "text": "More info on ",
+        "userDefined": false
+      },
+      {
+        "text": "DaVinci Resolve",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "dd1b29ae-a0e7-4359-908c-6cb4c406bfcb",
+    "data": [
+      {
+        "text": "What does ",
+        "userDefined": false
+      },
+      {
+        "text": "Postman",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      },
+      {
+        "text": " do?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "787863f2-3f99-48b5-8a3b-c32aa8bbdc0d",
+    "data": [
+      {
+        "text": "Describe ",
+        "userDefined": false
+      },
+      {
+        "text": "Unity",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a982d22f-7ffd-48d7-b020-d12daeb56087",
+    "data": [
+      {
+        "text": "Tell me more about ",
+        "userDefined": false
+      },
+      {
+        "text": "Jupyter",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "12cb3798-5a5f-4b38-bf98-2bf21f71a959",
+    "data": [
+      {
+        "text": "I want to know about ",
+        "userDefined": false
+      },
+      {
+        "text": "Trello",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e54aad39-6c4e-4002-904a-30d3e1fcea32",
+    "data": [
+      {
+        "text": "What is ",
+        "userDefined": false
+      },
+      {
+        "text": "DBeaver",
+        "meta": "@tool-name",
+        "alias": "tool-name",
+        "userDefined": true
+      },
+      {
+        "text": " used for?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
