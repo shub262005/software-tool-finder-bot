@@ -68,7 +68,7 @@ export default function ChatWindow() {
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "bot",
-        text: data.text || "",
+        text: data.text || (!data.payload ? "Hmm, I didn't get a proper response. Could you try asking again?" : ""),
         payload: data.payload // Capture rich JSON payload
       };
 
