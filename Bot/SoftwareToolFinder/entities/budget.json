@@ -1,9 +1,0 @@
-{
-  "id": "943b0c88-6693-41e7-92c4-5dc47d63cdd5",
-  "name": "budget",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": false,
-  "automatedExpansion": false,
-  "allowFuzzyExtraction": true
-}
